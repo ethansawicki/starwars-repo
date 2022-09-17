@@ -30,3 +30,19 @@ export const fetchPlanets = async () => {
   const jsonData = await dataFetch.json()
   return jsonData
 }
+
+export const fetchSpecies = async () => {
+  const dataFetch = await fetch(`${API}/species`)
+  const jsonData = await dataFetch.json()
+  return jsonData
+}
+
+export const fetchShipNoCap = async () => {
+  const dataFetch = await fetch(`${API}/starships`)
+  const jsonData = await dataFetch.json()
+  return jsonData
+}
+
+export const fetchPeople = async () => {
+  
+}
